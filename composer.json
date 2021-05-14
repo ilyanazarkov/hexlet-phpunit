@@ -1,23 +1,26 @@
 {
-  "name": "hexlet/php-package",
-  "bin": ["bin/php-package"],
+  "name": "ilyanazarkov/phpunit",
+  "bin": ["bin/hphpunit"],
   "type": "library",
   "authors": [
     {
-      "name": "Kirill Mokevnin",
-      "email": "mokevnin@gmail.com"
+      "name": "Ilya Nazarkov",
+      "email": "ilyanazarkov@ilyanazarkov.com"
     }
   ],
-  "description": "hexlet php-package",
+  "description": "hexlet php-phpunit",
   "license": "MIT",
   "scripts": {
     "test": "phpunit tests"
   },
   "autoload": {
     "psr-4": {
-      "Php\\Package\\": "src",
-      "Php\\Package\\Tests\\": "tests"
-    }
+      "Hexlet\\Phpunit\\": "src",
+      "Hexlet\\Phpunit\\Tests\\": "tests"
+    },
+    "files": [
+      "src/Utils.php"
+    ]
   },
   "require": {
     "tightenco/collect": "^5.6",
